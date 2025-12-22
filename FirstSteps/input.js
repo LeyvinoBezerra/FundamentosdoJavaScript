@@ -1,3 +1,8 @@
+
+// A linha abaixo importa o módulo "prompt-sync", que permite ler entradas do usuário via terminal.
+// A função prompt() pode ser usada para solicitar dados e armazenar em variáveis.
 const prompt = require("prompt-sync")();
-const name = prompt("Qual é o seu nome?");
-console.log("Olá, " + name + "! Muito prazer!");
+
+// Exemplo de uso:
+let nome = prompt("Digite seu nome: "); // o usuário digita e o valor é atribuído à variável
+console.log("Olá, " + nome); // imprime a resposta recebida
