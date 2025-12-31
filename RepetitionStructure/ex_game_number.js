@@ -11,6 +11,13 @@ const prompt = require("prompt-sync")();
 
 const min = 1;
 const max = 10;
+// Gera um número inteiro aleatório entre 'min' e 'max' (inclusive).
+// Math.random() → retorna um número aleatório entre 0 e 1 (não incluso).
+// (max - min + 1) → define o intervalo de valores possíveis.
+// Math.random() * (max - min + 1) → escala o número aleatório para esse intervalo.
+// + min → desloca o intervalo para começar em 'min'.
+// Math.trunc(...) → remove a parte decimal, garantindo que o resultado seja um número inteiro.
+// O valor final é armazenado na constante 'secret'.
 const secret = Math.trunc(Math.random() * (max - min + 1) + min);
 
 let playing = true;
